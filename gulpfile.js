@@ -1,13 +1,13 @@
 // Gulp.js configuration
 'use strict';
-''
+'../../wamp64/www/portfolio/'
 
 const
 
   // source and build folders
   dir = {
     src         : 'src/',
-    build       : ''
+    build       : '../../wamp64/www/portfolio/'
   },
 
   // Gulp and plugins
@@ -97,7 +97,7 @@ var css = {
       require('postcss-assets')({
         loadPaths: ['images/'],
         basePath: dir.build,
-        baseUrl: ''
+        baseUrl: 'photography/images'
       }),
       require('autoprefixer')({
         browsers: ['last 2 versions', '> 2%']
@@ -148,7 +148,7 @@ gulp.task('build', ['php', 'css', 'js', 'html', 'videos']);
 
 // Browsersync options
 const syncOpts = {
-    proxy       : 'localhost:8080/',
+    proxy       : 'localhost:8080/portfolio',
     files       : dir.build + '**/*',
     open        : false,
     notify      : false,
