@@ -5,23 +5,35 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Matt Townsend</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
     <script defer src="fontawesome/js/all.js"></script> <!--load all styles -->
-
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
 </head>
 <body>
     <header id="header-section">
         <div class="header-content">
             <img class="header-image" src="images/headshot.jpg" alt="">
             <h1 class="main-header">Matt Townsend</h1>
+            <h2 class="sub-header">Web Developer</h2>
             <ul class="header-links">
-                <li><a href="" class="header-link"><i class="fab fa-github"></i></a></li>
-                <li><a href="" class="header-link"><i class="fal fa-envelope"></i></a></li>
+                <li><a href="https://github.com/matttowns" class="header-link"><i class="fab fa-github"></i></a></li>
+                <li><a href="mailto:matt.towns89@gmail.com" class="header-link"><i class="fal fa-envelope"></i></a></li>
             </ul>                
         </div>
-        <div class="scroll-arrow">
+        <div id="scroll-button" class="scroll-arrow">
             <i class="fal fa-chevron-circle-down"></i>
         </div>
     </header>
@@ -32,7 +44,9 @@
                 <div class="project-content">
                     <h3 class="project-title">TPT Consultancy &amp; Training</h3>
                     <div class="project-description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sem purus, luctus a nibh ac, fermentum euismod felis. Quisque accumsan, risus sit amet tempor suscipit, augue elit laoreet leo, quis interdum ex orci imperdiet nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis purus et justo blandit, ac pharetra nunc mollis. Nam lobortis dui sed nisi lobortis, vitae porta velit semper. Donec sed nibh sodales, ullamcorper lorem vitae, tristique dolor. Vivamus tincidunt posuere porta. Vivamus consectetur velit felis, et vestibulum enim laoreet quis. Maecenas placerat sed mauris nec tristique. Nam fermentum lacinia dui. Proin a ante dictum, congue leo a, rutrum purus.</p>
+                        <p>This project involved the design and development of a new website for TPT Consultancy &amp; Training. </p>
+                        <p>Due to the fact that client needed to display a catalogue of their offerings on the website, the challenge was to show this information in a clear and presentable manner.</p>
+                        <p>The website runs on Wordpress and the theme was developed from scratch. This allowed me to gain a greater understanding of Wordpress and PHP, along with HTML, CSS3 (with SCSS) and JS. </p>
                     </div>
                 </div>
                 <div class="project-content project-image-content">
@@ -41,7 +55,29 @@
                         <img class="project-image" src="images/tpt-mobile.png"  alt="">
                     </picture>
                     <div class="project-links">
-                        <a href="" class="project-link">View Project</a>
+                        <a href="https://tptconsultancy.com" class="project-link" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <h2 class="section-header">Current Projects</h2>
+            <div class="project">
+                <div class="project-content">
+                    <h3 class="project-title">Warcraft Character Tracker</h3>
+                    <div class="project-description">
+                        <p>The goal of this project is to create a character tracker for World of Warcraft that performs similar functions to the official Armory website, as well as adding additional features.</p>
+                        <p>This project is being developed with Vue.js and was chosen as a way of learning the framework. It also allowed me to gain experience in utilising a public API in order to collect and present information.</p>
+                        <p>The project is currently on-going and is currently fully functional for Alliance Mage and Druid characters.</p>
+                        <p>(To demo the app in it's current state, the following options can be selected: Region - EU, Realm - Ravencrest, Character - Destie)</p>
+                    </div>
+                </div>
+                <div class="project-content project-image-content">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="images/wow.png">
+                        <img class="project-image" src="images/wow-mobile.png"  alt="">
+                    </picture>                    
+                    <div class="project-links">
+                        <a href="https://github.com/matttowns/wow-character-tracker" class="project-link" target="_blank"><i class="fab fa-github"></i> Github</a>
+                        <a href="http://wow-character-tracker.s3-website.eu-west-2.amazonaws.com" class="project-link" target="_blank">View Project</a>
                     </div>
                 </div>
             </div>
@@ -58,31 +94,26 @@
                         <img class="project-image" src="images/tpt-mobile.png"  alt="">
                     </picture>                    
                     <div class="project-links">
-                        <a href="" class="project-link"><i class="fab fa-github"></i> Github</a>
-                        <a href="" class="project-link">View Project</a>
-                    </div>
-                </div>
-            </div>
-            <h2 class="section-header">Current Projects</h2>
-            <div class="project">
-                <div class="project-content">
-                    <h3 class="project-title">Warcraft Character Tracker</h3>
-                    <div class="project-description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sem purus, luctus a nibh ac, fermentum euismod felis. Quisque accumsan, risus sit amet tempor suscipit, augue elit laoreet leo, quis interdum ex orci imperdiet nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis purus et justo blandit, ac pharetra nunc mollis. Nam lobortis dui sed nisi lobortis, vitae porta velit semper. Donec sed nibh sodales, ullamcorper lorem vitae, tristique dolor. Vivamus tincidunt posuere porta. Vivamus consectetur velit felis, et vestibulum enim laoreet quis. Maecenas placerat sed mauris nec tristique. Nam fermentum lacinia dui. Proin a ante dictum, congue leo a, rutrum purus.</p>
-                    </div>
-                </div>
-                <div class="project-content project-image-content">
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="images/wow.png">
-                        <img class="project-image" src="images/wow-mobile.png"  alt="">
-                    </picture>                    
-                    <div class="project-links">
-                        <a href="" class="project-link"><i class="fab fa-github"></i> Github</a>
-                        <a href="" class="project-link">View Project</a>
+                        <a href="" class="project-link"><i class="fab fa-github" target="_blank"></i> Github</a>
+                        <a href="" class="project-link"  target="_blank">View Project</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <script>
+            $(document).ready(function(){
+               // Add smooth scrolling to all links
+               console.log("test");
+               $("#scroll-button").on('click', function(event) {
+       
+                   // Make sure this.hash has a value before overriding default behavior
+
+                    $('html, body').animate({
+                        scrollTop: $("#projects-section").offset().top
+                    }, 1000);
+               });
+            });
+           </script>    
 </body>
 </html>
